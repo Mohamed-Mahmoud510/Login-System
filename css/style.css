@@ -1,0 +1,16 @@
+body {
+    background-color: #24353f;
+    font-family: "Titillium Web", sans-serif;
+    color: #ced4da;
+
+}
+h1 {
+    color: #17a2b8;
+}
+
+.form-control {
+    background-color: #24353f;
+}
+.btn {
+     color: #ced4da;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Assignment</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container py-5" id="loginSection">
+    <div class="row">
+      <div class="col-md-12 p-5 shadow-lg text-center">
+        <h1 class="mb-3">Smart Login System</h1>
+        <div class="form-floating mb-3">
+          <input type="email" oninput="" class="form-control" id="emailLog-input" placeholder="emailLogInput">
+          <div class="alert alert-danger py-1 mt-2 d-none">
+            <small>Email have to contain @ and . com or your email extension</small>
+          </div>
+          <label for="emailLogInput">Enter User Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" oninput="" class="form-control" id="password-log" placeholder="passwordLog">
+          <div class="alert alert-danger py-1 mt-2 d-none">
+            <small>Password have to contain capital letter then form 5 to 8 small letters or numbers</small>
+          </div>
+          <label for="passwordLog">Enter Your Password</label>
+        </div>
+        <button class="btn btn-info form-control my-3" type="submit" id="logIn">
+          Login</button>
+        <p class="text-white">Don’t have an account?<a href="#"
+            class="link-underline-light ms-2 link-light signup-a">Sign up</a></p>
+            <p class="alert text-danger d-none no-account"> sorry u have't account</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5 d-none" id="registSection">
+    <div class="row">
+      <div class="col-md-12 p-5 shadow-lg text-center">
+        <h1 class="mb-3">Smart Login System</h1>
+        <div class="form-floating mb-3">
+          <input type="text" oninput="" class="form-control reg" id="user-input" placeholder="userInput">
+          <label for="userInput">Enter User Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" oninput="" class="form-control reg" id="user-email" placeholder="userEmail">
+          <div class="alert alert-danger py-1 mt-2 d-none">
+            <small>Email have to contain @ and . com or your email extension</small>
+          </div>
+          <label for="userEmail">Enter User userEmail</label>
+        </div>
+        <p class="alert text-danger d-none e-Error">Invalid Email Pls try Again</p>
+        <div class="form-floating mb-3">
+          <input type="password" oninput="" class="form-control reg" id="user-password" placeholder="userpassword">
+          <div class="alert alert-danger py-1 mt-2 d-none">
+            <small>Minimum eight characters, at least one upper case English letter, one lower case English letter, one
+              number and one special character</small>
+          </div>
+          <label for="userpassword">Enter Your Password</label>
+        </div>
+        <button class="btn btn-info form-control my-3" type="submit" id="signUp">Sign Up</button>
+        <p class="text-white">Don’t have an account?<a href="#"
+            class="link-underline-light ms-2 link-light signin-a">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
